@@ -1,0 +1,21 @@
+[package]
+name = "mtdalgos"
+version = "0.2.0"
+authors = ["GrayChrysTea <gray.chrys.tea@gmail.com>"]
+edition = "2018"
+license = "MIT"
+license-file = "LICENSE"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[lib]
+name = "mtdalgos"
+crate-type = ["rlib", "cdylib"]
+test = false
+bench = false
+
+[[bin]]
+name = "test-dijkstra"
+path = "src/bin/dijkstra.rs"
